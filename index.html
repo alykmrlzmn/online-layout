@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal Profile</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+
+  $(document).ready(function(){
+
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+  </script>
+  <body>
+  
+    <section class="hero">
+      <div class="main-width">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-a"></i>
+            <i class="fa-solid fa-l"></i>
+            <i class="fa-solid fa-y"></i>
+            <i class="fa-solid fa-s"></i>
+            <i class="fa-solid fa-r"></i>
+            <i class="fa-solid fa-h"></i>
+          </div>
+          <nav>
+             <!-- <div class="hamb">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>  -->
+
+       <div class="nav-list">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio(s)</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li class="btn"><a href="#">Contact Me</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+    <section class="first" id="home">
+      <div>
+       
+        <div class="flex-container">
+          <div class="c-left">
+   
+             <div class="container">
+              <div class="hero-text">
+                <h3>Hi , there!</h3>
+                <h1>hi I am <span>Alya Maisarah</span></h1>
+
+                <div class="social">
+                  <a href="#"><i class="fa-solid fa-phone"></i></a>
+                  <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <button type="button">More About Me</button>
+              </div>
+        </div>
+          </div>
+          <div class="c-right">
+           
+              <img
+                src="img/img-me-latest.png"
+                alt="Girl in a jacket"
+                width="80%"
+                height="70%"
+              />
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flexbox-portfolio" id="portfolio">
+      <!-- <div>
+        <h1> Portfolios</h1>
+      </div> -->
+     
+      <div class="pf-a">
+      
+       <img src="img/logo-latest-part2.PNG"  alt="logo"  />
+       <h1>Speak-It-Right</h1> 
+       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      <div class="pf-a">
+        <h1>to-do-list</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+      </div>
+      <div class="pf-a">
+        <h1>crud</h1> 
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      <div class="pf-a">
+        <h1>to-do-list</h1> 
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </section>
+  </body>
+</html>
